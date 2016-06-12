@@ -28,7 +28,8 @@ ul, nav {
   border-radius: 0 !important; }
 
 .popover {
-  top: 143px !important; }
+  top: 143px !important;
+  right: 15px !important; }
   .popover .popover-content {
     padding: 7px !important; }
 
