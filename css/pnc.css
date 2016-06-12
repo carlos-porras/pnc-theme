@@ -1,0 +1,18 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,300,700);
+body {
+  background-color: #FFFFFF; }
+
+ul, nav {
+  margin: 0;
+  padding: 0; }
+
+.flex-row {
+  display: flex;
+  width: 100%;
+  justify-content: space-between; }
+
+.logo {
+  display: block;
+  padding: 10px 0; }
+  .logo img {
+    width: 250px; }
