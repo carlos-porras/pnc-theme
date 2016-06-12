@@ -29,19 +29,60 @@
                     </ul>
                     <ul class="pnc-menu pnc-menu-right">
                         <li>
-                            <a href="" data-toggle="tooltip" title="Buscar" data-placement="bottom"> <i class="zmdi zmdi-search"></i></a>
+                            <a href="#" id="search-content" data-toggle="popover" data-content="" data-html="true" data-placement="bottom"> <i class="zmdi zmdi-search"></i>
+                            </a>
                         </li>
                         <li>
-                            <a href="" data-toggle="tooltip" title="Iniciar sesion" data-placement="bottom"><i class="zmdi zmdi-account-circle"></i></a>
+                            <a href="#" id="login-content" data-toggle="popover" title="Ingreso a la plataforma" data-content="" data-html="true" data-placement="bottom"><i class="zmdi zmdi-account-circle"></i></a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+
+    <template id="search-tpl">
+        <form action="#" role="form">
+            <div class="form-group">
+                <div class="input-group">
+                  <input type="search" class="form-control" placeholder='Busqueda...'>
+                    <span class="input-group-btn">
+                        <button class="btn btn-danger" type="submit"><i class="zmdi zmdi-caret-right-circle"></i></button>
+                    </span>
+                </div>
+            </div>
+        </form>
+    </template>
+
+
+    <template id="login-tpl">
+        <form action="#" role="form">
+            <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="zmdi zmdi-account-circle"></i></span>
+                  <input type="text" class="form-control" placeholder="Usuario ó email">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="zmdi zmdi-lock"></i></span>
+                  <input type="password" class="form-control" placeholder="Contraseña">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <button class="btn btn-primary" type="submit"><i class="zmdi zmdi-mail-send"></i> Ingresar</button>
+            </div>
+        </form>
+    </template>
+
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/bootstrap.config.js"></script>
     <script src="js/site.js"></script>
 </body>
 </html>
+
+
+
+

@@ -34,10 +34,21 @@ ul, nav
     }
 }
 
+*{
+    border-radius: 0 !important;
+}   
+.popover{
+    top: 143px !important;
+    .popover-content
+    {
+        padding: 7px !important;
+    }
+}
+
 .pnc-navbar
 {
     background-color: $c_red;
-    border-bottom: 4px solid $c_blue;
+    border-bottom: 6px solid $c_blue;
     .pnc-menu{
         display: flex;
         list-style: none;
